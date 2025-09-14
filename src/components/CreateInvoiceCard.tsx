@@ -4,11 +4,8 @@ import plus from './Vector.png';
 
 const CreateInvoiceCard: React.FC = () => {
   return (
-    <div className="w-full flex flex-col items-center text-center">
+    <div className="w-full mt-6 flex flex-col items-center text-center">
       {/* Grey Background Section */}
-      <div className=' bg-white' >
-
-     
       <div className="w-full bg-gray-100 rounded-[2rem] p-6 flex flex-col items-center">
         <div className="flex items-center justify-center w-14 h-14 mb-4 bg-dashboard-purple text-fuchsia-600 rounded-full text-4xl font-light">
           <img src={plus} alt="" />
@@ -37,7 +34,6 @@ const CreateInvoiceCard: React.FC = () => {
       >
         Or Upload an existing invoice and set payment reminder
       </p>
-       </div>
     </div>
   );
 };
