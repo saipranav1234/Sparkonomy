@@ -1,6 +1,6 @@
 import React from 'react';
 
-interface InvoiceItemProps {
+export interface InvoiceItemProps {
   clientName: string;
   amount: string;
   dueDate: string;

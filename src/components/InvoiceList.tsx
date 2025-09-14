@@ -1,8 +1,9 @@
 // src/components/InvoiceList.tsx
 import React from 'react';
 import InvoiceItem from './InvoiceItem';
+import type { InvoiceItemProps } from './InvoiceItem'; // ✅ type-only import
 
-const invoices = [
+const invoices: InvoiceItemProps[] = [
   { clientName: 'Client Name', amount: '1,25,000', dueDate: '2024-06-15', status: 'Update Status' },
   { clientName: 'Client Name', amount: '1,25,000', dueDate: '2024-06-15', status: 'Unpaid' },
   { clientName: 'Income Trend', amount: '1,25,000', dueDate: '2024-06-15', status: 'Disputed' },
@@ -15,6 +16,7 @@ const invoices = [
   { clientName: 'Income Trend', amount: '1,25,000', dueDate: '2024-06-15', status: 'Draft' },
   { clientName: 'Income Trend', amount: '1,25,000', dueDate: '2024-06-15', status: 'Paid' },
 ];
+
 
 const InvoiceList: React.FC = () => {
   return (
