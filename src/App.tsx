@@ -1,11 +1,27 @@
-import React from 'react'
+// src/App.tsx
+import React from 'react';
+import Header from './components/Header';
+import CreateInvoiceCard from './components/CreateInvoiceCard';
+import TimePeriodSelector from './components/TimePeriodSelector';
+import EarningsSummary from './components/EarningsSummary';
+import IncomeTrendChart from './components/IncomeTrendChart';
+import InvoiceList from './components/InvoiceList';
+import Footer from './components/Footer';
 
-const App = () => {
+function App() {
   return (
-    <div>
-      <h1 className='text-3xl font-bold underline text-center' >HI how are  </h1>
+    <div className="min-h-screen  font-sans">
+      <Header />
+      <main className="container mx-auto p-4 space-y-4 max-w-lg md:max-w-xl lg:max-w-2xl xl:max-w-3xl">
+        <CreateInvoiceCard />
+        <TimePeriodSelector />
+        <EarningsSummary />
+        <IncomeTrendChart />
+        <InvoiceList />
+      </main>
+      <Footer />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
