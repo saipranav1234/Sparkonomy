@@ -82,13 +82,13 @@ const IncomeTrendChart: React.FC = () => {
 
       <div className="flex justify-center gap-4 mt-4 text-xs sm:text-sm text-dashboard-text-light">
         <div className="flex items-center">
-          <span className="inline-block w-3 h-3 rounded-full bg-dashboard-purple mr-1"></span>
-          <span>income</span>
+          <span className="inline-block w-3 h-3   bg-purple-500 mr-1"></span>
+          <span className=' text-purple-500' >income</span>
         </div>
         <div className="flex items-center">
-          <span className="inline-block w-3 h-0.5 border-b-2 border-dashed border-dashboard-purple mr-1"></span>{' '}
+          <span className="inline-block w-3 h-0.5 border-b-2 border-dashed  text-amber-900 mr-1"></span>{' '}
           {/* Line style */}
-          <span>momGrowth</span>
+          <span className=' text-amber-900' >momGrowth</span>
         </div>
       </div>
     </div>
